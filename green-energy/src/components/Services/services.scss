@@ -1,0 +1,9 @@
+section.services {
+    .container {
+        flex-direction: column;
+
+        .service-cards {
+            gap: 1rem;
+        }
+    }
+}
