@@ -1,2 +1,69 @@
 @use "../../sass/variables" as v;
 
+section.hero {
+    width: 100%;
+    height: calc(100vh - 8rem);
+
+    .container {
+        height: 100%;
+        flex-direction: column;
+
+        div {
+            z-index: 10;
+        }
+
+        .middle-cont {
+            height: 50%;
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                height: fit-content;
+                background: rgba(v.$light-grey, 0.5);
+                backdrop-filter: blur(15px);
+                border-radius: 40px;
+                border: 2px solid rgba(white, 0.5);
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        .hero-text {
+            flex-direction: column;
+
+            h1 {
+                line-height: 2.5rem;
+                margin: 3rem 0;
+            }
+            h4 {
+                margin: 1rem 0 2rem 0;
+            }
+        }
+    }
+
+    .white-rect {
+        position: absolute;
+        bottom: 0;
+        left: -1300px;
+        width: 2000px;
+        height: 280px;
+        background: v.$white;
+        border-radius: 0 280px 0 0;
+        filter: blur(1px);
+    }
+}
+
+.backgrnd-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 50px 50px;
+    background-image: url("../../resources/webp/hero-b.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 80%;
+    transform: scaleX(-1);
+}

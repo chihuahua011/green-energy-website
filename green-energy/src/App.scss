@@ -1,12 +1,147 @@
 @use "./sass/variables" as v;
 
+$grid-sizes: ("1": 8.33333333%,"2": 16.66666667%,"3": 25%,"4": 33.33333333%,"5": 41.666667%,"6": 50%,"7": 58.33333333%,"8": 66.666667%,"9": 75%,"10": 83.33333333%,"11": 91.666667%,"12": 100%);
+$flex-justify: ("left": flex-start,"right": flex-end, "center": center, "between": space-between);
+$flex-align: ("top": flex-start, "bottom": flex-end, "center": center);
+
+html {
+    font-size: 10px;
+}
+
 body {
     background-color: v.$white;
     color: v.$font-color;
+    overflow-x: hidden;
 
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     font-variation-settings: "slnt" 0;
+}
+
+.App {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    * {
+        position: relative;
+    }
+}
+
+p {
+    margin: 0.2rem 0;
+}
+
+h1, .h1 {
+    font-size: 7rem;
+    font-weight: 500;
+}
+
+h2, .h2 {
+    font-size: 5.6rem;
+    font-weight: 500;
+}
+
+h3, .h3 {
+    font-size: 4.4rem;
+    font-weight: 500;
+}
+
+h4, .h4 {
+    font-size: 3.2rem;
+    font-weight: 300;
+}
+
+h5, .h5 {
+    font-size: 2.8rem;
+    font-weight: 300;
+}
+
+.m-def {
+    margin: 20px 0;
+}
+
+.p-def {
+    padding: 0 15px;
+}
+
+@each $name, $val in $flex-justify {
+    .justify-#{$name} {
+        justify-content: $val;
+    }
+}
+
+@each $name, $val in $flex-align {
+    .align-#{$name} {
+        align-items: $val;
+    }
+}
+
+@for $i from 1 through 20 {
+    .mx-#{$i} {
+        margin-left: $i * 1rem;
+        margin-right: $i * 1rem;
+    }
+    .my-#{$i} {
+        margin-top: $i * 1rem;
+        margin-bottom: $i * 1rem;
+    }
+    .mt-#{$i} {
+        margin-top: $i * 1rem;
+    }
+    .mb-#{$i} {
+        margin-bottom: $i * 1rem;
+    }
+    .ml-#{$i} {
+        margin-left: $i * 1rem;
+    }
+    .mr-#{$i} {
+        margin-right: $i * 1rem;
+    }
+
+    .px-#{$i} {
+        padding-left: $i * 1rem;
+        padding-right: $i * 1rem;
+    }
+    .py-#{$i} {
+        padding-top: $i * 1rem;
+        padding-bottom: $i * 1rem;
+    }
+    .pt-#{$i} {
+        padding-top: $i * 1rem;
+    }
+    .pb-#{$i} {
+        padding-bottom: $i * 1rem;
+    }
+    .pl-#{$i} {
+        padding-left: $i * 1rem;
+    }
+    .pr-#{$i} {
+        padding-right: $i * 1rem;
+    }
+
+    .gap-#{$i} {
+        gap: $i * 1rem;
+    }
+}
+
+.container {
+    display: flex;
+    .col {
+        display: flex;
+        width: auto;
+        flex: 1 0 auto;
+    }
+
+    [class^="col-"] {
+        display: flex;
+    }
+
+    @each $num, $val in $grid-sizes {
+        .col-#{$num} {
+            flex: 0 0 $val;
+            width: $val;
+        }
+    }
 }
