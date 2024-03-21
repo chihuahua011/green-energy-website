@@ -21,8 +21,30 @@ function Hero() {
 						<h4>Harnessing the Power of Renewable Energy</h4>
 					</div>
 					<span className="white-rect"></span>
+
 				</div>
             </section>
+			<section className="benefits">
+				<div className="container">
+					<div className="col-6 img-cont p-def justify-right">
+						<div className="col-9 justify-right align-center">
+							<p className="p-def">EFFICIENCY</p>
+							<p className="p-def">ENVIRONMENTAL FRIENDLINESS</p>
+							<p className="p-def">CONVENIENCE</p>
+						</div>
+						<img alt="" className="benefits-img"></img>
+					</div>
+					<div className="col-6 cards-cont p-def">
+						<h4 className="col-12">Benefits of Green Energy</h4>
+						<span className="col-6 text-card">Sustainable Energy Solutions</span>
+						<span className="col-6 text-card">Cost-Effiecient Alternatives</span>
+						<span className="col-6 text-card">Renewable Resource Utilization</span>
+						<span className="col-6 text-card">Energy Security</span>
+						<span className="col-6 text-card">Reduced Carbon Emissions</span>
+						<span className="col-6 text-card">Environmental Preservation</span>
+					</div>
+				</div>
+			</section>
         </>
     );
 }

@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-color: v.$white;
+    background-color: v.$light-grey;
     color: v.$font-color;
     overflow-x: hidden;
 
@@ -23,10 +23,15 @@ body {
 .App {
     max-width: 1440px;
     margin: 0 auto;
+    background-color: v.$white;
 
     * {
         position: relative;
     }
+}
+
+section {
+    margin-bottom: 8rem;
 }
 
 p {
@@ -128,19 +133,22 @@ h5, .h5 {
 
 .container {
     display: flex;
+    max-width: 100%;
     .col {
         display: flex;
         width: auto;
         flex: 1 0 auto;
+        flex-wrap: wrap;
     }
 
     [class^="col-"] {
         display: flex;
+        flex-wrap: wrap;
     }
 
     @each $num, $val in $grid-sizes {
         .col-#{$num} {
-            flex: 0 0 $val;
+            flex: 0 1 $val;
             width: $val;
         }
     }

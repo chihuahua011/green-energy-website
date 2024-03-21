@@ -44,13 +44,61 @@ section.hero {
 
     .white-rect {
         position: absolute;
-        bottom: 0;
+        bottom: -3px;
         left: -1300px;
         width: 2000px;
         height: 280px;
         background: v.$white;
         border-radius: 0 280px 0 0;
-        filter: blur(1px);
+    }
+}
+
+section.benefits {
+    height: 550px;
+    .container {
+        height: 100%;
+        .img-cont {
+            height: 100%;
+            > div {
+                height: 50px;
+                z-index: 10;
+                background-color: v.$white;
+                border-radius: 40px;
+                p {
+                    font-size: 1.4rem;
+
+                    &:not(:last-child) {
+                        border-right: 1px solid v.$font-color;
+                    }
+                }
+            }
+            .benefits-img {
+                position: absolute;
+                top: 20px;
+                left: 15px;
+                width: calc(100% - 30px);
+                height: 500px;
+                border-radius: 70px;
+                background-image: url("../../resources/webp/benefits-img.webp");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+
+        .cards-cont {
+            align-content: center;
+            gap: 1rem;
+            .text-card {
+                height: 40px;
+                justify-content: center;
+                align-items: center;
+                flex: 1 0 48%;
+                font-size: 1.6rem;
+                border: 1px solid rgba(v.$font-color, 0.25);
+                background-color: v.$light-grey;
+                border-radius: 40px;
+            }
+        }
     }
 }
 
