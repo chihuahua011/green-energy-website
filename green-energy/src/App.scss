@@ -91,7 +91,7 @@ h5, .h5 {
 
 @for $i from 1 through 20 {
     .m-#{$i} {
-        margin: $i * 1rem;
+        margin: $i * 1rem !important;
     }
     .mx-#{$i} {
         margin-left: $i * 1rem;
@@ -115,7 +115,7 @@ h5, .h5 {
     }
 
     .p-#{$i} {
-        padding: $i * 1rem;
+        padding: $i * 1rem !important;
     }
     .px-#{$i} {
         padding-left: $i * 1rem;
