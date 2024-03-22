@@ -6,10 +6,10 @@ function Services() {
     <>
         <section className="services">
             <div className="container p-def">
-                <h4>Our Services</h4>
-                <div className='col service-cards'>
-                    <div className="col-4 card">
-                        <span className="card-head">
+                <h4 className='col-12'>Our Services</h4>
+                <div className='col service-cards justify-right'>
+                    <div className="flex card m-1 p-3">
+                        <span className="flex card-head mb-3">
                             <p>01</p>
                             <p>Adaptive Home</p>
                         </span>
@@ -21,8 +21,8 @@ function Services() {
                             </p>
                         </span>
                     </div>
-                    <div className="col-4 card">
-                        <span className="card-head">
+                    <div className="flex card m-1 p-3">
+                        <span className="flex card-head mb-3">
                             <p>02</p>
                             <p>Solar</p>
                         </span>
@@ -33,10 +33,14 @@ function Services() {
                             </p>
                         </span>
                     </div>
-                    <div className='col-4 see-all-btn'>See All</div>
-                    <div className="col-4"></div>
-                    <div className="col-4 card">
-                        <span className="card-head">
+                    <div className='flex see-all-btn m-1 p-3 justify-center align-center'>
+                        <span className='flex justify-center align-center'>
+                            <p>See All</p>
+                        </span>
+                    </div>
+                    <div className="placeholder m-1 p-3"></div>
+                    <div className="flex card m-1 p-3">
+                        <span className="flex card-head mb-3">
                             <p>03</p>
                             <p>Solar + Battery</p>
                         </span>
@@ -48,8 +52,8 @@ function Services() {
                             </p>
                         </span>
                     </div>
-                    <div className="col-4 card">
-                        <span className="card-head">
+                    <div className="flex card m-1 p-3">
+                        <span className="flex card-head mb-3">
                             <p>04</p>
                             <p>Standby Generator</p>
                         </span>

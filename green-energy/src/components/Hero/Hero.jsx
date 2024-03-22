@@ -15,7 +15,7 @@ function Hero() {
 							<Button className={"button primary mt-2"}>Let's talk</Button>
 						</div>
 					</div>
-					<div className="hero-text col pb-2 justify-right">
+					<div className="hero-text col pb-2 justify-right mb-5">
 						<h1>Empowering</h1>
 						<h1>Green Futures</h1>
 						<h4>Harnessing the Power of Renewable Energy</h4>
@@ -27,7 +27,7 @@ function Hero() {
 			<section className="benefits">
 				<div className="container">
 					<div className="col-6 img-cont p-def justify-right">
-						<div className="col-9 justify-right align-center">
+						<div className="flex justify-right align-center">
 							<p className="p-def">EFFICIENCY</p>
 							<p className="p-def">ENVIRONMENTAL FRIENDLINESS</p>
 							<p className="p-def">CONVENIENCE</p>
@@ -36,12 +36,12 @@ function Hero() {
 					</div>
 					<div className="col-6 cards-cont p-def">
 						<h4 className="col-12">Benefits of Green Energy</h4>
-						<span className="col-6 text-card">Sustainable Energy Solutions</span>
-						<span className="col-6 text-card">Cost-Effiecient Alternatives</span>
-						<span className="col-6 text-card">Renewable Resource Utilization</span>
-						<span className="col-6 text-card">Energy Security</span>
-						<span className="col-6 text-card">Reduced Carbon Emissions</span>
-						<span className="col-6 text-card">Environmental Preservation</span>
+						<span className="flex text-card">Sustainable Energy Solutions</span>
+						<span className="flex text-card">Cost-Effiecient Alternatives</span>
+						<span className="flex text-card">Renewable Resource Utilization</span>
+						<span className="flex text-card">Energy Security</span>
+						<span className="flex text-card">Reduced Carbon Emissions</span>
+						<span className="flex text-card">Environmental Preservation</span>
 					</div>
 				</div>
 			</section>

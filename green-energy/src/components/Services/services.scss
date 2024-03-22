@@ -1,9 +1,50 @@
+@use "../../sass/variables" as v;
+
 section.services {
     .container {
-        flex-direction: column;
 
         .service-cards {
             gap: 1rem;
+            .card {
+                background-color: v.$light-grey;
+                flex: 1 0 31%;
+                flex-direction: column;
+                border-radius: 30px;
+
+                .card-head {
+                    p {
+                        font-size: 1.6rem;
+                        
+                        &:first-child {
+                            padding-right: 1rem;
+                        }
+                        &:last-child {
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+
+            .see-all-btn {
+                flex: 1 0 31%;
+
+                span {
+                    width: 125px;
+                    height: 125px;
+                    border: 2px solid v.$blue;
+                    border-radius: 70px;
+                    cursor: pointer;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                }
+            }
+
+            .placeholder {
+                flex: 1 0 31%;
+            }
         }
     }
 }

@@ -2,7 +2,7 @@
 
 section.hero {
     width: 100%;
-    height: calc(100vh - 8rem);
+    height: 100vh;
 
     .container {
         height: 100%;
@@ -44,12 +44,12 @@ section.hero {
 
     .white-rect {
         position: absolute;
-        bottom: -3px;
-        left: -1300px;
-        width: 2000px;
+        bottom: 50px;
+        left: -40px;
+        width: 750px;
         height: 280px;
         background: v.$white;
-        border-radius: 0 280px 0 0;
+        border-radius: 0 50px;
     }
 }
 
@@ -60,10 +60,11 @@ section.benefits {
         .img-cont {
             height: 100%;
             > div {
+                width: 500px;
                 height: 50px;
                 z-index: 10;
                 background-color: v.$white;
-                border-radius: 40px;
+                border-radius: 50px;
                 p {
                     font-size: 1.4rem;
 
@@ -87,7 +88,7 @@ section.benefits {
 
         .cards-cont {
             align-content: center;
-            gap: 1rem;
+            gap: 2rem;
             .text-card {
                 height: 40px;
                 justify-content: center;
@@ -114,4 +115,5 @@ section.benefits {
     background-size: cover;
     background-position: 0 80%;
     transform: scaleX(-1);
+    box-shadow: 0 5px 10px 0px #6f6f6f;
 }

@@ -37,6 +37,7 @@ section {
 
 p {
     margin: 0.2rem 0;
+    font-size: 1.4rem;
 }
 
 h1, .h1 {
@@ -72,6 +73,10 @@ h5, .h5 {
     padding: 0 15px;
 }
 
+.flex {
+    display: flex;
+}
+
 @each $name, $val in $flex-justify {
     .justify-#{$name} {
         justify-content: $val;
@@ -85,6 +90,9 @@ h5, .h5 {
 }
 
 @for $i from 1 through 20 {
+    .m-#{$i} {
+        margin: $i * 1rem;
+    }
     .mx-#{$i} {
         margin-left: $i * 1rem;
         margin-right: $i * 1rem;
@@ -106,6 +114,9 @@ h5, .h5 {
         margin-right: $i * 1rem;
     }
 
+    .p-#{$i} {
+        padding: $i * 1rem;
+    }
     .px-#{$i} {
         padding-left: $i * 1rem;
         padding-right: $i * 1rem;
@@ -135,6 +146,7 @@ h5, .h5 {
 .container {
     display: flex;
     max-width: 100%;
+    flex-wrap: wrap;
     .col {
         display: flex;
         max-width: 100%;
@@ -158,6 +170,7 @@ h5, .h5 {
         .col-#{$num} {
             flex: 0 0 $val;
             max-width: $val;
+            padding: 0 15px;
         }
     }
 }
