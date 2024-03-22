@@ -1,0 +1,57 @@
+@use "../../sass/variables" as v;
+
+section.about {
+    height: 800px;
+    .container {
+        height: 100%;
+        .about-cont {
+            display: grid;
+            grid-template-columns: 15% 20% 15% 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 2rem;
+
+            .about-text {
+                align-self: center;
+                flex-direction: column;
+
+                p {
+                    font-size: 1.6rem;
+                }
+            } 
+
+            span[class^=img] {
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 30px;
+
+                &[class$="-1"] {
+                    background-image: url("../../resources/webp/about-1.webp");
+                    background-position: 50% 0;
+                }
+                &[class$="-2"] {
+                    background-image: url("../../resources/webp/about-2.webp");
+                    background-position: 12% 0;
+                }
+                &[class$="-3"] {
+                    background-image: url("../../resources/webp/about-3.webp");
+                    background-position: 50% 0;
+                }
+                &[class$="-4"] {
+                    grid-column: 1 / span 2;
+                    background-image: url("../../resources/webp/about-4.webp");
+                    background-position: 0% 0;
+                }
+                &[class$="-5"] {
+                    background-image: url("../../resources/webp/about-5.webp");
+                    background-position: 50% 0;
+                }
+                &[class$="-6"] {
+                    background-image: url("../../resources/webp/about-6.webp");
+                    background-position: 0 30%;
+                }
+            }
+        }
+    }
+}
