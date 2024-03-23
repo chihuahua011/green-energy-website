@@ -92,10 +92,10 @@ function Faq() {
                         }></Panel>
                     </div>
                 </div>
-                <div className="col-4 faq-text">
-                    <div className='py-1'>
+                <div className="col-5 faq-text">
+                    <div className='flex py-1'>
                         <h4>FAQ</h4>
-                        <p>We have prepared answers to the most frequently asked questions for you.</p>
+                        <p className='mb-2'>We have prepared answers to the most frequently asked questions for you.</p>
                         <span className="faq-img"></span>
                     </div>
                 </div>

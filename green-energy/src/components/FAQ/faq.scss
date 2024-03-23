@@ -11,6 +11,10 @@ section.faq {
         }
 
         .faq-text {
+            > div {
+                flex-direction: column;
+            }
+
             h4 {
                 margin-top: 0;
                 margin-bottom: 2rem;
@@ -18,6 +22,16 @@ section.faq {
 
             p {
                 font-size: 1.6rem;
+            }
+
+            .faq-img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+                background-image: url("../../resources/webp/faq.webp");
+                background-repeat: no-repeat;
+                background-size: cover;
             }
         }
     }
