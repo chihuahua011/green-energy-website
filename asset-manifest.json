@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/green-energy-website/static/css/main.2d1ced69.css",
+    "main.js": "/green-energy-website/static/js/main.87472081.js",
+    "static/js/453.43a58912.chunk.js": "/green-energy-website/static/js/453.43a58912.chunk.js",
+    "static/media/about-2.webp": "/green-energy-website/static/media/about-2.345765f76710aad12054.webp",
+    "static/media/about-5.webp": "/green-energy-website/static/media/about-5.19d211e89fb0ebcaf697.webp",
+    "static/media/benefits-img.webp": "/green-energy-website/static/media/benefits-img.f02d70eda8b9bdaf0ba9.webp",
+    "static/media/faq.webp": "/green-energy-website/static/media/faq.db6284887e2d74e051d1.webp",
+    "static/media/hero-b.webp": "/green-energy-website/static/media/hero-b.07cb286b2075e1cc5cd7.webp",
+    "static/media/about-3.webp": "/green-energy-website/static/media/about-3.5c5b1318706efc5c25e2.webp",
+    "static/media/about-6.webp": "/green-energy-website/static/media/about-6.168a5dbfbe69a9363377.webp",
+    "static/media/about-4.webp": "/green-energy-website/static/media/about-4.c68a0145759fd6e06c1b.webp",
+    "static/media/about-1.webp": "/green-energy-website/static/media/about-1.f269c050e323171cb988.webp",
+    "static/media/reviews-bg2.webp": "/green-energy-website/static/media/reviews-bg2.1a6f8d9627d9cf3394a1.webp",
+    "index.html": "/green-energy-website/index.html",
+    "main.2d1ced69.css.map": "/green-energy-website/static/css/main.2d1ced69.css.map",
+    "main.87472081.js.map": "/green-energy-website/static/js/main.87472081.js.map",
+    "453.43a58912.chunk.js.map": "/green-energy-website/static/js/453.43a58912.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d1ced69.css",
+    "static/js/main.87472081.js"
+  ]
+}
