@@ -10,10 +10,10 @@ function Footer() {
 					<div className="col-7 logo-footer"></div>
 					<div className="col-5 links-footer">
 						<div className="flex col-cont justify-between pr-2">
-							<Button className={"link"}>Services</Button>
-							<Button className={"link"}>About</Button>
-							<Button className={"link"}>Reviews</Button>
-							<Button className={"link"}>FAQ</Button>
+							<Button className={"link"}><p>Services</p></Button>
+							<Button className={"link"}><p>About</p></Button>
+							<Button className={"link"}><p>Reviews</p></Button>
+							<Button className={"link"}><p>FAQ</p></Button>
 						</div>
 					</div>
 				</div>

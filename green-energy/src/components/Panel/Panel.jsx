@@ -23,7 +23,10 @@ function Panel({ header, content }) {
     return (
         <>
             <div ref={panelRef} className="panel-cont closed">
-                <div className="flex panel-header px-3">{header}</div>
+                <div className="flex panel-header px-3 justify-between">
+                    {header}
+                    <span className="panel-icon"></span>
+                </div>
                 <div className="panel-content px-3 py-1">{content}</div>
             </div>
         </>

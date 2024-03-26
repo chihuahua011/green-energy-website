@@ -12,7 +12,7 @@ function Hero() {
 						<div className="card px-7 py-2 mt-5 justify-center align-center">
 							<p>Discover Sustainable Solutions</p>
 							<p>for a Greener Tomorrow</p>
-							<Button className={"button primary mt-2"}>Let's talk</Button>
+							<Button className={"button primary mt-2"}><p>Let's talk</p></Button>
 						</div>
 					</div>
 					<div className="hero-text col pb-2 justify-right mb-5">

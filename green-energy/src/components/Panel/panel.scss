@@ -13,14 +13,30 @@
         cursor: pointer;
         height: 50px;
         padding-top: 1.2rem;
-    }
 
+        .panel-icon {
+            position: absolute;
+            top: calc(50% - 11px);
+            right: 15px;
+            width: 18px;
+            height: 18px;
+            background-image: url("../../resources/icon/chevron-up-solid.svg");
+            background-repeat: no-repeat;
+            transition: all 250ms ease-out;
+        }
+    }
+    
     .panel-content {
         height: fit-content;
         transition: all 500ms ease-in-out;
+        border-top: 1px solid rgba(v.$font-color, 0.25);
     }
-
+    
     &.closed {
         max-height: 50px;
+        
+        .panel-header .panel-icon {
+            transform: rotate(180deg);
+        }
     }
 }
