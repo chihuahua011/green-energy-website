@@ -1,11 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Button from "../Button/Button";
 import "./header.scss";
 
 function Header() {
+
+	useEffect(() => {
+		const header = document.querySelector("section.header");
+
+		const handleScroll = () => {
+			if(window.scrollY === 0) {
+				header.setAttribute("page-top", "true");
+			} else {
+				header.setAttribute("page-top", "false");
+			}
+		}
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		}
+	}, [])
+
+
     return (
         <>
-            <section className="header m-def">
+            <section className="header py-2">
                 <div className="container p-def">
 					<div className="col-6 p-def justify-right">
 						<div className="col-8 justify-center align-center header-links-cont gap-4">

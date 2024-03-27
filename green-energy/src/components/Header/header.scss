@@ -10,11 +10,71 @@
     .container {
         max-width: 1440px;
         margin: 0 auto;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: -130px;
+            width: 100%;
+            height: 100px;
+            background-color: rgba(v.$light-grey, 0.75);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(v.$font-color, 0.25);
+            border-radius: 0 0 30px 30px;
+            // animation-delay: 500ms;
+        }
+        
+        .header-links-cont {
+            background-color: rgba(v.$light-grey, 0.75);
+            border-radius: 50px;
+            backdrop-filter: blur(5px);
+            transition: all 400ms ease-in-out;
+            transition-delay: 200ms;
+        }
+    }
+    
+    &[page-top="false"] {
+        .container::before {
+            animation: headerAnim 400ms ease-out forwards;
+            animation-delay: 200ms;
+        }
+
+        .header-links-cont {
+            background-color: transparent;
+            border-radius: 50px;
+            backdrop-filter: blur(0);
+        }
+    }
+    &[page-top="true"] {
+        .container::before {
+            top: -40px;
+            animation: headerAnimOut 400ms ease-in forwards;
+            animation-delay: 200ms;
+        }
     }
 }
 
-.header-links-cont {
-    background-color: rgba(v.$light-grey, 0.75);
-    border-radius: 50px;
-    backdrop-filter: blur(5px);
+
+@keyframes headerAnim {
+    0% {
+        top: -130px;
+    }
+    75% {
+        top: -25px;
+    }
+    100% {
+        top: -40px;
+    }
+}
+
+@keyframes headerAnimOut {
+    0% {
+        top: -40px;
+    }
+    25% {
+        top: -25px;
+    }
+    100% {
+        top: -130px;
+    }
 }

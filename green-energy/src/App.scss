@@ -20,9 +20,14 @@ body {
     font-variation-settings: "slnt" 0;
 }
 
-.App {
+#root {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.App {
+    max-width: 1440px;
+    margin: 0 5rem;
     background-color: v.$white;
 
     * {
