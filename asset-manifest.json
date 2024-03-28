@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/green-energy-website/static/css/main.2d1ced69.css",
-    "main.js": "/green-energy-website/static/js/main.87472081.js",
+    "main.css": "/green-energy-website/static/css/main.b57f2a83.css",
+    "main.js": "/green-energy-website/static/js/main.fb8fbba8.js",
     "static/js/453.43a58912.chunk.js": "/green-energy-website/static/js/453.43a58912.chunk.js",
     "static/media/about-2.webp": "/green-energy-website/static/media/about-2.345765f76710aad12054.webp",
     "static/media/about-5.webp": "/green-energy-website/static/media/about-5.19d211e89fb0ebcaf697.webp",
@@ -14,12 +14,13 @@
     "static/media/about-1.webp": "/green-energy-website/static/media/about-1.f269c050e323171cb988.webp",
     "static/media/reviews-bg2.webp": "/green-energy-website/static/media/reviews-bg2.1a6f8d9627d9cf3394a1.webp",
     "index.html": "/green-energy-website/index.html",
-    "main.2d1ced69.css.map": "/green-energy-website/static/css/main.2d1ced69.css.map",
-    "main.87472081.js.map": "/green-energy-website/static/js/main.87472081.js.map",
+    "static/media/chevron-up-solid.svg": "/green-energy-website/static/media/chevron-up-solid.e03ce44b13202709258a.svg",
+    "main.b57f2a83.css.map": "/green-energy-website/static/css/main.b57f2a83.css.map",
+    "main.fb8fbba8.js.map": "/green-energy-website/static/js/main.fb8fbba8.js.map",
     "453.43a58912.chunk.js.map": "/green-energy-website/static/js/453.43a58912.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d1ced69.css",
-    "static/js/main.87472081.js"
+    "static/css/main.b57f2a83.css",
+    "static/js/main.fb8fbba8.js"
   ]
 }
