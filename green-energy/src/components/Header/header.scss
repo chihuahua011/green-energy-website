@@ -32,6 +32,17 @@
             transition: all 400ms ease-in-out;
             transition-delay: 200ms;
         }
+
+        .logo-img {
+            position: absolute;
+            left: 4rem;
+            top: -0.5rem;
+            width: 48px;
+            height: 48px;
+            background-image: url("../../resources/icon/renewable-energy.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     }
     
     &[page-top="false"] {

@@ -27,6 +27,7 @@ function Header() {
         <>
             <section className="header py-2">
                 <div className="container p-def">
+					<span className="logo-img"></span>
 					<div className="col-6 p-def justify-right">
 						<div className="col-8 justify-center align-center header-links-cont gap-4">
 							<Button className={"link"}><p>Services</p></Button>
